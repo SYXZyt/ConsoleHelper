@@ -8,6 +8,10 @@ namespace Console
 	struct RGBColor final
 	{
 		u8 r, g, b;
+
+		RGBColor() = default;
+		RGBColor(int r, int g, int b) : r(r), g(g), b(b) {}
+		RGBColor(u8 r, u8 g, u8 b) : r(r), g(g), b(b) {}
 	};
 
 	using RGBColour = RGBColor;
