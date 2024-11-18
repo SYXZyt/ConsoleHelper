@@ -4,10 +4,7 @@ set(CMAKE_CXX_STANDARD 23)
 
 set(CMAKE_DEBUG_POSTFIX "-d")
 
-set(CONSOLE_LIB_SRC "")
-if (WIN32)
-	set(CONSOLE_LIB_SRC ${CONSOLE_LIB_SRC}  src/ConsoleController.cpp)
-endif()
+set(CONSOLE_LIB_SRC ${CONSOLE_LIB_SRC}  src/ConsoleController.cpp)
 
 include_directories("Include")
 
